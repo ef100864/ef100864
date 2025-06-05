@@ -1,49 +1,164 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Plane Manufacturers</title>
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plane Manufacturers</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(135deg, #60e2ff, #a1ecff);
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      padding: 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.9);
+      width: 100%;
+      max-width: 800px;
+      padding: 15px 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    nav {
+      margin-bottom: 20px;
+    }
+
+    a {
+      display: inline-block;
+      margin: 10px;
+      text-decoration: none;
+      color: #0033cc;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: color 0.3s ease, transform 0.2s ease;
+    }
+
+    a:hover {
+      color: #0066ff;
+      transform: translateY(-2px);
+    }
+
+    h1, h2, h3 {
+      color: #222;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      letter-spacing: 1px;
+    }
+
+    h2 {
+      font-size: 1.8em;
+    }
+
+    h3 {
+      font-size: 1.2em;
+      font-weight: normal;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin: 20px 0;
+      display: block;
+      loading: lazy;
+    }
+
+    .container {
+      max-width: 800px;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .manufacturer-section {
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+
+      h3 {
+        font-size: 1em;
+      }
+
+      header, .container {
+        padding: 15px;
+      }
+
+      a {
+        font-size: 1em;
+        margin: 5px;
+      }
+    }
+  </style>
 </head>
-<style> 
-body{
-  background:#60e2ff
-</style>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Plane.html">All about Planes</a>
+    </nav>
+  </header>
 
-<a href="index.html">Home</a>  
+  <div class="container">
+    <h1>Different Plane Manufacturers</h1>
 
-<a href="Plane.html">All about Planes</a> 
+    <div class="manufacturer-section">
+      <h2>Airbus</h2>
+      <img src="https://tlimagazine.com/wp-content/uploads/sites/9/2024/02/aviation-news-image-1.jpeg" alt="Airbus aircraft" loading="lazy">
+      <h3>
+        Airbus is the world's third-largest plane manufacturer. This French-German company has produced 15,500 planes over its 54-year history. Airbus is known for creating the world's largest passenger airplane, the Airbus A380, and the eco-friendly Airbus Beluga. The company has a rich history and ambitious plans, including developing the world's first eco-friendly military helicopter. Visit the official Airbus website for more details:
+      </h3>
+      <a href="https://www.airbus.com/en" target="_blank">Airbus Website</a>
+    </div>
 
-  
-<h1>Different Plane Manufacurers</h1>
+    <div class="manufacturer-section">
+      <h2>Boeing</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Boeing%2C_N780BA%2C_B747-409%28LCF%29_Dreamlifter_-_PAE_%2819833251496%29.jpg/1200px-Boeing%2C_N780BA%2C_B747-409%28LCF%29_Dreamlifter_-_PAE_%2819833251496%29.jpg" alt="Boeing 747-409 Dreamlifter" loading="lazy">
+      <h3>
+        Boeing is the world's largest and oldest aircraft manufacturer, having produced 20,000 planes. It holds records for being the largest aircraft producer and creating significant military transport planes. Beyond aviation, Boeing manufactures satellites and has contributed parts to the Mars Rover and the first rocket to land on the moon. Explore more on the official Boeing website:
+      </h3>
+      <a href="https://www.boeing.com/#latest" target="_blank">Boeing Website</a>
+    </div>
 
-
-<h2>
-Airbus
-<h2>
-<img src="https://tlimagazine.com/wp-content/uploads/sites/9/2024/02/aviation-news-image-1.jpeg" />
-
-<h3>Airbus is the worlds 3rd best plane manufacturer. It is a French-German Airplane Manufacterer and has made 15500 planes in their career of 54 years. Airbus has made the worlds largest passanger airplane and the 
- worlds most eco friendly plane, the Airbus Beluga. Airbus has a huge history and a much bigger future like making the worlds first eco-friendly millitary helicopter. Here is the link to the Official Aribus Website.</h3>
-
-<a href="https://www.airbus.com/en">Airbus Website</a> 
-  
-<h2>Boeing </h2>
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Boeing%2C_N780BA%2C_B747-409%28LCF%29_Dreamlifter_-_PAE_%2819833251496%29.jpg/1200px-Boeing%2C_N780BA%2C_B747-409%28LCF%29_Dreamlifter_-_PAE_%2819833251496%29.jpg" />
-
-<h3> Boeing is the worlds largest and oldest aircraft manufacturer. It has made 20,000 planes in it's life time and has set a set of unbeatable world records like the worlds largest aircraft producer and the
- millitary transport plane. Boeing doesn't only make planes but satelites and has contributed by giving parts to the Mars Rover and even the fisrt rocket to land on the moon. Here is a link to the Official Boeing Website.</h3>
-
-<a href="https://www.boeing.com/#latest">Boeing Website</a> 
-  
-<h2> Antonov</h2>
-
-<img src="https://hips.hearstapps.com/pop.h-cdn.co/assets/16/06/1455057829-super-guppy.jpg?crop=0.8xw:1xh;center,top&resize=1200:*" />
-
-<h3> Antonov is the worlds best cargo plane manufacturer and has broke so much world records. Anotov is a Ukrainian Plane Manufacturer that was made in 1938 by the Goverment of the Soviet Union. The company has
- the worlds largest plane and cargo plane and the worlds largest cargo plane to reach the highest altitude. Antonov is it's own transport company and doesn't sell most of it's planes to other companies. A plane
- that Anotov created is still used by Nasa, even though bought in 2008. Here is the link to Anotov's Website.</h3>
-
-<a href="https://www.antonov.com/en/airlines">Antonov</a> 
-  
+    <div class="manufacturer-section">
+      <h2>Antonov</h2>
+      <img src="https://hips.hearstapps.com/pop.h-cdn.co/assets/16/06/1455057829-super-guppy.jpg?crop=0.8xw:1xh;center,top&resize=1200:*" alt="Antonov cargo plane" loading="lazy">
+      <h3>
+        Antonov, a Ukrainian manufacturer founded in 1938 by the Soviet government, is renowned as the world's best cargo plane manufacturer. It holds records for the largest plane, the largest cargo plane, and the highest-altitude cargo plane. Antonov operates its own transport company and retains most of its planes. Notably, a plane it created is still used by NASA, despite being purchased in 2008. Learn more on Antonov's website:
+      </h3>
+      <a href="https://www.antonov.com/en/airlines" target="_blank">Antonov Website</a>
+    </div>
+  </div>
 </body>
 </html>
