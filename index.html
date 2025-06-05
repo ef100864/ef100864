@@ -1,56 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>All Planes</title>
-  <style> 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      background: #60e2ff;
-      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #60e2ff, #a1ecff);
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      color: #333;
       padding: 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.9);
+      width: 100%;
+      max-width: 800px;
+      padding: 15px 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    nav {
+      margin-bottom: 20px;
     }
 
     a {
       display: inline-block;
-      margin: 10px 10px 20px 0;
+      margin: 10px;
       text-decoration: none;
-      color: #0000cc;
+      color: #0033cc;
       font-weight: bold;
+      font-size: 1.1em;
+      transition: color 0.3s ease, transform 0.2s ease;
+    }
+
+    a:hover {
+      color: #0066ff;
+      transform: translateY(-2px);
     }
 
     h1, h2, h3 {
-      margin-bottom: 10px;
+      color: #222;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      letter-spacing: 1px;
+    }
+
+    h2 {
+      font-size: 1.8em;
+    }
+
+    h3 {
+      font-size: 1.2em;
+      font-weight: normal;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     img {
       max-width: 100%;
       height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       margin: 20px 0;
+      display: block;
+      loading: lazy;
+    }
+
+    .container {
+      max-width: 800px;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+
+      h3 {
+        font-size: 1em;
+      }
+
+      header, .container {
+        padding: 15px;
+      }
+
+      a {
+        font-size: 1em;
+        margin: 5px;
+      }
     }
   </style>
 </head>
 <body>
-
-  <a href="Plane.html">All about Planes</a>  
-  <a href="Plane manufacturers.html">Plane Manufacturers</a>  
-
-  <h1>All about Planes</h1>
-
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/A6-EDY_A380_Emirates_31_jan_2013_jfk_%288442269364%29_%28cropped%29.jpg/640px-A6-EDY_A380_Emirates_31_jan_2013_jfk_%288442269364%29_%28cropped%29.jpg" alt="Airbus A380 Image" />
-
-  <h2>What are planes?</h2>
-  
-  <h3>
-    A plane is a type of vehicle that we use in our everyday lives. Planes are the only form of public transportation that can travel across countries and continents quickly. Planes have different uses: some are used for transporting cargo, others for passenger travel, and many are used for military purposes. These planes are modified according to their specific roles. The picture above shows the world's largest passenger plane, the Airbus A380.
-  </h3>
-
-  <h3>Different types of Airlines</h3>
-
-  <h3>
-    An airline is a transportation business that helps people travel to various destinations. Some airlines operate domestic flights (within a country), while others offer international services (between different countries). Some airlines do both! Here's a link to a list of the best international airlines in the world:
-  </h3>
-
-  <a href="https://www.worldairlineawards.com/worlds-top-10-airlines-2024/" target="_blank">World's Best Airlines</a>
-
-</body>
-</html>
-
+  <header>
+    <nav>
+      <a href="Plane.html">All about Planes</a>  
+      <a href="Plane manufacturers.html">Plane Manufacturers</
